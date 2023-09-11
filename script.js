@@ -36,22 +36,14 @@ async function fetchAndDisplayHindiJoke() {
 
 fetchAndDisplayEnglishJoke();
 
-// Get a reference to the Language button by its ID
 const languageEnglishButton = document.getElementById('RightLanguageButton');
-// Define an onclick function for the Language button
-languageEnglishButton.onclick = function () {
-    // Call the fetchAndDisplayHindiJoke function when the Language button is clicked
- // Call the async function to fetch and display the joke by default on first run
+languageEnglishButton.onclick = () => {
 fetchAndDisplayEnglishJoke();
 };
 
 
-// Get a reference to the Language button by its ID
 const languageHindiButton = document.getElementById('leftLanguageButton');
-// Define an onclick function for the Language button
-languageHindiButton.onclick = function () {
-    // Call the fetchAndDisplayHindiJoke function when the Language button is clicked
-    // Call the async function to fetch and display the Hindi joke
+languageHindiButton.onclick = () => {
     fetchAndDisplayHindiJoke();
 };
 
